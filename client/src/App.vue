@@ -2,9 +2,7 @@
   <div id="app">
     <Todos/>
     <footer className="info">
-      <p>Based on a project written by <a href="http://evanyou.me">Evan You</a></p>
-      <p>Original Vue TodoApp project is <a href="https://vuejs.org/v2/examples/todomvc.html">here</a></p>
-      <p>Modified for this tutorial by Andrew Hughes</p>
+      <p>Powered by @Hugocossa</p>
     </footer>
   </div>
 </template>
