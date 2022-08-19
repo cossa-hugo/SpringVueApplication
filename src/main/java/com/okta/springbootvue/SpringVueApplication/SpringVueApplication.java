@@ -13,6 +13,7 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
 import java.util.Collections;
+import java.util.UUID;
 import java.util.stream.Stream;
 
 @SpringBootApplication
@@ -22,11 +23,11 @@ public class SpringVueApplication {
 		SpringApplication.run(SpringVueApplication.class, args);
 	}
 
-	// Bootstrap some test data into the in-memory database
+	// Add some data into in-memory database
 	@Bean
 	ApplicationRunner init(TodoRepository repository) {
 		return args -> {
-			Stream.of("Learn Spring", "Write linkedin post", "Write tutorial", "Get Certification", "Go get some rest").forEach(name -> {
+			Stream.of("Learn Spring", "Finish activit", "Write linkedin post", "Write tutorial", "Get Certification", "Go get some rest").forEach(name -> {
 				Todo todo = new Todo();
 				todo.setTitle(name);
 				repository.save(todo);

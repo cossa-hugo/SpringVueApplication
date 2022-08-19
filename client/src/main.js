@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import App from './App'
+import VueLogger from 'vuejs-logger';
 
 Vue.config.productionTip = false
-
-import VueLogger from 'vuejs-logger';
 
 const options = {
   isEnabled: true,
